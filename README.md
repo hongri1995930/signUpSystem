@@ -9,7 +9,10 @@ A web sign up system for international students,background used PHP, the databas
 
 #Release Nodes
 ***
-##1.0.1 beta -2016-3-29
+##1.0.2 beta - 2016-3-30
+* 对首页界面进行了美化
+
+##1.0.1 beta - 2016-3-29
 * 更新了项目工程的目录并清除了少数测试文件
 
 ##1.0 beta - 2016-3-28
