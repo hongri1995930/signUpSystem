@@ -18,7 +18,7 @@
     $sql="select * from SignInfo where SidNr = '$idNumber'";
     $rs = mysql_query( $sql) or die("error");
     if (mysql_num_rows($rs)>0){
-        echo "<script>alert('You have already Sign up! ');location.href='../chooselanguage.html';</script>";
+        echo "<script>alert('You have already Sign up! ');location.href='../index.html';</script>";
     }
                 
     //$ip=$_SERVER['REMOTE_ADDR'];
@@ -26,7 +26,7 @@
     values('$name','$idNumber','$passportNr','$sex',now(),'$nationality','$phoneNr','$religion','$college','$major','$comment')";
     //echo $sql;
     mysql_query( $sql) or die('Error');
-    echo "<script>alert('Sign up Successful! ');location.href='../chooselanguage.html';</script>";
+    echo "<script>alert('Sign up Successful! ');location.href='../index.html';</script>";
     //header("Location:chooselanguage.html");
 ?>
  
