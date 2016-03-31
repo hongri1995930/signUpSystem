@@ -9,7 +9,7 @@
             exit();
         }
         else{
-             echo "<script>alert('登录失败！');location.href='./chooseLanguage.html';</script>";
+             echo "<script>alert('登录失败！');location.href='../html/backgroundLogin.html';</script>";
              exit();
         }
 ?>

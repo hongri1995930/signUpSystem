@@ -10,8 +10,9 @@
         <link rel="stylesheet" type="text/css" href="../css/form.css" />
     </head>
     <body>
-        <h2 align="center">请完成以下登记表</h2>
-        <form method="post" action="../php/getIfo.php" accept-charset="utf-8">
+        <div class="form">
+            <h2 align="center">请完成以下登记表</h2>
+            <form method="post" action="../php/getIfo.php" accept-charset="utf-8">
             <table align="center" celloadding="2">
                 <tr>
                     <td class="fline" align="right" colspan="2">
@@ -21,7 +22,7 @@
                 <tr>
                     <td class="fCol">姓名：</td>
                     <td class="sCol">
-                        <input type="text" id="name" name="name" required="" oninvalid="setCustomValidity('Please Input your Name!')" oninput="setCustomValidity('')" />*
+                        <input type="text" id="name" name="name" required="" oninvalid="setCustomValidity('请输入姓名！')" oninput="setCustomValidity('')" />*
                     </td>
                 </tr>
                 <tr>
@@ -34,7 +35,7 @@
                 <tr>
                      <td class="fCol">学号：</td>
                      <td class="sCol">
-                        <input type="text" id="schoolId" name="schoolId" pattern="^[Ll]201[0-9]{9}$" required="" oninvalid="setCustomValidity('Please Input your School ID Such As L201419630101')" oninput="setCustomValidity('')"/>*
+                        <input type="text" id="schoolId" name="schoolId" pattern="^[Ll]201[0-9]{9}$" required="" oninvalid="setCustomValidity('请输入学号，例如：L201419630101')" oninput="setCustomValidity('')"/>*
                     </td>
                 </tr>
                 <tr>
@@ -286,13 +287,13 @@
                 <tr>
                      <td class="fCol">护照号：</td>
                      <td class="sCol">
-                        <input type="text" id="passport" name="passport" required="" oninvalid="setCustomValidity('Please Input your Passport Number!')" oninput="setCustomValidity('')"/>*
+                        <input type="text" id="passport" name="passport" required="" oninvalid="setCustomValidity('请输入护照号！')" oninput="setCustomValidity('')"/>*
                     </td>
                 </tr>
                 <tr>
                     <td class="fCol">手机号：</td>
                     <td class="sCol">
-                        <input type="text" id="phoneNumber" name="phoneNumber" pattern="^[1][0-9]{10}$" required="" oninvalid="setCustomValidity('Please Check your Phone Number!')" oninput="setCustomValidity('')" />*
+                        <input type="text" id="phoneNumber" name="phoneNumber" pattern="^[1][0-9]{10}$" required="" oninvalid="setCustomValidity('请检查你的手机号！')" oninput="setCustomValidity('')" />*
                     </td>
                 </tr>
                 <tr>
@@ -316,19 +317,20 @@
                         <input type="text" id="major" name="major"/>
                     </td>
                 </tr>
-                <tr>
+                <tr>              
                     <td class="fCol">备注：</td>
                     <td class="sCol">
                         <textarea name="comments" rows="5" cols="50"></textarea>
                     </td>
                 </tr>
                 <tr>
-                    <td class="lastCol" align="center" colspan="2">
-                        <input type="submit" value="登录"/>
-                        <input type="reset" value="重置"/>
+                    <td align="center" colspan="2">
+                        <input class="lastline" type="submit" value="确认"/>
+                        <input class="lastline" type="reset" value="重置"/>
                     </td>
                 </tr>
             </table>
         </form>
+        </div>    
     </body>
 </html>

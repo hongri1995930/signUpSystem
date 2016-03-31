@@ -10,8 +10,9 @@
         <link rel="stylesheet" type="text/css" href="../css/form.css" />
     </head>
     <body>
-        <h2 align="center">Please Fill the Following Form</h2>
-        <form method="post" action="../php/getIfo.php" accept-charset="utf-8">
+        <div class="form">
+            <h2 align="center">Please Fill the Following Form</h2>
+            <form method="post" action="../php/getIfo.php" accept-charset="utf-8">
             <table align="center" celloadding="2">
                 <tr>
                     <td class="fline" align="right" colspan="2">
@@ -324,11 +325,13 @@
                 </tr>
                 <tr>
                     <td class="lastCol" align="center" colspan="2">
-                        <input type="submit" value="Submit Vote"/>
-                        <input type="reset" value="Reset Form"/>
+                        <input class="lastline" type="submit" value="Submit"/>
+                        <input class="lastline" type="reset" value="Reset Form"/>
                     </td>
                 </tr>
             </table>
         </form>
+        </div>
+        
     </body>
 </html>

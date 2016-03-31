@@ -2,7 +2,7 @@
     header("Content-type:text/html; charset=utf-8");
     session_start();
     if(empty($_SESSION['user'])){
-        echo "<script>alert('请登录后台');location.href='./chooseLanguage.html';</script>";
+        echo "<script>alert('请登录后台');location.href='../index.html';</script>";
         exit();
     }
 ?>

@@ -6,6 +6,7 @@
         <meta name="author" content="nelson"/>
         <meta name="description" content="The index to login the background"/>
         <meta charset="utf-8"/>
+        <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" >
         <link rel="shortcut icon" href="../image/schoolicon.ico" type="image/x-icon" />
         <style>
             body{
@@ -14,31 +15,27 @@
         </style>
     </head>
     <body>
-        <form method="post" action="../php/login.php">
-            <table align="center">
-                <tr>
-                    <td>
-                        用户名：
-                    </td>
-                    <td>
-                        <input type="text" id="user" name="user" required=""/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        密码：
-                    </td>
-                    <td>
-                        <input type="password" id="password" name="password" required=""/>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan=2 align="center">
-                        <input type="submit" name="sub" value="登录"/>
-                        <input type="reset" value="重置"/>
-                    </td>
-                </tr>
-            </table>
-        </form>
+        <div class="col-sm-6 col-sm-offset-3 col-lg-6 col-lg-offset-3" id="search">
+            <div id="find_order" class="panel panel-info ">
+                <div class="panel-heading">后 台 登 录</div>
+                <div class="panel-body">
+                    
+                <form class="form-horizontal form-group " method="post" action="../php/login.php">
+                    <div class="form-group">
+                    <label class="col-sm-2 col-sm-offset-2 col-lg-2 col-lg-offset-2 control-label">账 户</label>
+                        <div class="col-sm-6 col-lg-6">
+                            <input class="form-control" type="text" placeholder="请输入账号" name="user" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 col-sm-offset-2 col-lg-2 col-lg-offset-2 control-label">密 码</label>
+                        <div class="col-sm-6 col-lg-6">
+                            <input class="form-control" type="password" placeholder="请输入密码" name="password"/>
+                        </div>
+                    </div>
+                    <button type="submit" class="col-lg-1 col-md-offset-9 btn btn-primary col-sm-offset-9 btn btn-primary">登录</button>
+            	</form>
+            </div>
+        </div>
     </body>
 </html>

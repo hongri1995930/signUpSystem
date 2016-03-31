@@ -9,6 +9,12 @@ A web sign up system for international students,background used PHP, the databas
 
 #Release Nodes
 ***
+##1.0.3 beta - 2016-3-31
+* 更正了一些网页跳转的错误
+* 完成对表单页面以及登录界面美化，在登录界面引入了bootstrap框架
+* 修改了一下首页设计，使得定位以及背景色更加协调（\_(:з」∠)_
+调色死人了。。。）
+
 ##1.0.2 beta - 2016-3-30
 * 对首页界面进行了美化
 
