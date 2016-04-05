@@ -19,14 +19,13 @@
     $rs = mysql_query( $sql) or die("error");
     if (mysql_num_rows($rs)>0){
         echo "<script>alert('You have already Sign up! ');location.href='../index.html';</script>";
+	exit();
     }
                 
     //$ip=$_SERVER['REMOTE_ADDR'];
-    $sql="insert into signInfo(Sname,SidNr,SpassportNr,Ssex,Sdate,Cabb,SphoneNr,Sreligion,Scollege,Smajor,Scomm)
+    $sql="insert into SignInfo(Sname,SidNr,SpassportNr,Ssex,Sdate,Cabb,SphoneNr,Sreligion,Scollege,Smajor,Scomm)
     values('$name','$idNumber','$passportNr','$sex',now(),'$nationality','$phoneNr','$religion','$college','$major','$comment')";
     //echo $sql;
     mysql_query( $sql) or die('Error');
     echo "<script>alert('Sign up Successful! ');location.href='../index.html';</script>";
-    //header("Location:chooselanguage.html");
 ?>
- 

@@ -9,7 +9,6 @@
 <html>
     <head>
         <title>Internation College</title>
-        <!-- <base href="http://120.27.120.4/international/"/> -->
         <meta name="author" content="nelson"/>
         <meta name="description" content="The background"/>
         <meta charset="utf-8"/>

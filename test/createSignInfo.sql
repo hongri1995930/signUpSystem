@@ -1,5 +1,5 @@
 create table SignInfo(
-	SidNr varchar(13) not null,
+	SidNr varchar(13) primary key,
     Sname varchar(40) not null,
     Ssex varchar(6) not null,
     Cabb varchar(3) not null,
