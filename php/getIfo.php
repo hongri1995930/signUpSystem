@@ -1,16 +1,18 @@
 <?php
     header("Content-type:text/html; charset=utf-8");
-    $name=$_POST["name"];
-    $sex=$_POST["fave"];
-    $idNumber=$_POST["schoolId"];
-    $nationality=$_POST["nationality"];
-    $passportNr=$_POST["passport"];
-    $phoneNr=$_POST["phoneNumber"];
-    $religion=$_POST["religion"];
-    $college=$_POST["college"];
-    $major=$_POST["major"];
-    $comment=$_POST["comments"];
+	require('checkpost.php');
+    $name=post_check($_POST["name"]);
+    $sex=post_check($_POST["fave"]);
+    $idNumber=post_check($_POST["schoolId"]);
+    $nationality=post_check($_POST["nationality"]);
+    $passportNr=post_check($_POST["passport"]);
+    $phoneNr=post_check($_POST["phoneNumber"]);
+    $religion=post_check($_POST["religion"]);
+    $college=post_check($_POST["college"]);
+    $major=post_check($_POST["major"]);
+    $comment=post_check($_POST["comments"]);
             
+	
     //database
     require('conn.php');                
     mysql_query("SET NAMES 'utf8'");
