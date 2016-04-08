@@ -4,7 +4,7 @@
         require('checkpost.php');
         $name=$_POST["user"];
         $password=$_POST["password"];
-        if(inject_check($name) and inject_check($password)){
+        if(inject_check($name) or inject_check($password)){
             echo "<script>alert('请勿输入非法字符！');location.href='../html/backgroundLogin.html';</script>";
             exit();
         }
