@@ -3,11 +3,16 @@ A web sign up system for international students,background used PHP, the databas
 ***
 ##TODO
 * 数据分析的其他功能
-* 尝试解决服务器端权限问题，优化文件下载服务
 
 
 #Release Nodes
 ***
+
+##1.2.1 - 2016-4-14
+* 优化了下载链接
+* 缩小了背景图片
+* 防止sql注入：.addslashed('$name').
+
 ##1.2 - 2016-4-5
 * 解决了对服务器端Ubuntu系统mysql无法导出至Apache2文件夹下的问题，但对Ubuntu文件夹权限限制，apparmor进程限制的问题还是没有解决，转而使用在php中加读取文件流的方式输出到网页使用户下载。
 * 使用php文件之间变量传递解决文件名的读取问题：
